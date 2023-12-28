@@ -21,6 +21,7 @@ http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/ba
 				</batch:step>
 				<batch:step name="Batch_Step1" doc:id="26e713c7-6fac-470a-982d-18a1009e1160" acceptPolicy="ONLY_FAILURES">
 					<logger level="INFO" doc:name="Logger" doc:id="aff78ef6-29b8-4158-af41-6a4e3719d453" message='#["the alphabet is" ++ payload]'/>
+					<logger level="INFO" doc:name="Logger" doc:id="faacdfba-cff5-40c0-a1b3-5cea96a34c14" message="#[payload]"/>
 				</batch:step>
 			</batch:process-records>
 			<batch:on-complete >
